@@ -5,6 +5,9 @@ public class Move : MonoBehaviour {
 	public GameObject Player;
 	Rigidbody2D PlayerR;
 
+	public GameObject w1;
+	public GameObject w2;
+
 	// Use this for initialization
 	void Start () {
 		PlayerR=Player.GetComponent<Rigidbody2D> ();
