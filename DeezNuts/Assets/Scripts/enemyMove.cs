@@ -52,7 +52,7 @@ public class enemyMove : MonoBehaviour {
 				//else move in between patrol points, w1 and w2
 
 				transform.position = Vector3.MoveTowards (transform.position, GameObject.Find ("w1").transform.position, step);
-				Debug.Log (transform.position + " " + w1.transform.position);
+				//Debug.Log (transform.position + " " + w1.transform.position);
 
 				if (transform.position.ToString ().Equals (w1.transform.position.ToString ())) {
 					switch1 = true;

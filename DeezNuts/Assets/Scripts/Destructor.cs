@@ -8,9 +8,10 @@ public class Destructor : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("destroyed "+other.name +" "+this.name);
+
 		if (other.name == "Bullet(Clone)") {
 			Destroy (other.gameObject);
+			Debug.Log ("destroyed "+other.name +" "+this.name);
 		}
 	}
 	

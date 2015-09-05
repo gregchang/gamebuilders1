@@ -4,10 +4,12 @@ using System.Collections;
 public class Main : MonoBehaviour {
 	public GameObject Player;
 	public GameObject Bullet;
+	public GameObject cam;
 	public static bool shooting;
 	public int bulletSpeed=10;
 	Vector3 mouse= new Vector3();
 	float angle;
+	float tim=0;
 
 	// Use this for initialization
 	void Start () {
@@ -23,24 +25,19 @@ public class Main : MonoBehaviour {
 		float angle = Mathf.Atan2(lookPos.y, lookPos.x) * Mathf.Rad2Deg;
 		Player.transform.rotation = Quaternion.AngleAxis(angle-90, Vector3.forward);
 
-		//Bullet.transform.position = new Vector3(lookPos.x, lookPos.y, 0);;
+		//Bullet.transform.position = new Vector3(lookPos.x+cam.transform.position.x, lookPos.y+cam.transform.position.y, 0);
 		//front.transform.position = Player.transform.position + Player.transform.up;
 		
-
-		if (shooting) {
-			shooting=false;
+		tim -= Time.deltaTime;
+		if (shooting && tim<0) {
 			Vector3 direction=Player.transform.position+Player.transform.up;
 			GameObject newBullet=(GameObject) Instantiate(Bullet,direction,new Quaternion());
-			direction.x=lookPos.x-direction.x;
-			direction.y=lookPos.y-direction.y;
-			//Debug.Log(direction.x+"/"+direction.x+"+"+direction.y);
-			direction.x=direction.x/(Mathf.Abs(direction.x)+Mathf.Abs(direction.y));
-			//Debug.Log(direction.x);
-			//Debug.Log(direction.y+"/"+direction.x+"+"+direction.y);
-			direction.y=direction.y/(Mathf.Abs(direction.x)+Mathf.Abs(direction.y));
-			//Debug.Log(direction.y);
+			direction.x=lookPos.x+cam.transform.position.x-direction.x;
+			direction.y=lookPos.y+cam.transform.position.y-direction.y;
+			direction.Normalize();
 			newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2((direction.x)*bulletSpeed,(direction.y)*bulletSpeed));
 			Debug.Log("shot" + direction);
+			tim=0.2f;
 		}
 
 	}
