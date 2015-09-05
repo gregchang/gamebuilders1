@@ -5,9 +5,6 @@ public class Move : MonoBehaviour {
 	public GameObject Player;
 	Rigidbody2D PlayerR;
 
-	public GameObject w1;
-	public GameObject w2;
-
 	// Use this for initialization
 	void Start () {
 		PlayerR=Player.GetComponent<Rigidbody2D> ();
@@ -17,10 +14,10 @@ public class Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (PlayerR.velocity.y<10 && PlayerR.velocity.y>-10) {
-			PlayerR.AddForce(new Vector2(0,Input.GetAxis ("Vertical")*10));
+			PlayerR.AddForce(new Vector2(0,Input.GetAxis ("Vertical")*20));
 		}
 		if (PlayerR.velocity.x<10 && PlayerR.velocity.x>-10) {
-			PlayerR.AddForce(new Vector2(Input.GetAxis ("Horizontal")*10,0));
+			PlayerR.AddForce(new Vector2(Input.GetAxis ("Horizontal")*20,0));
 		}
 	
 	}

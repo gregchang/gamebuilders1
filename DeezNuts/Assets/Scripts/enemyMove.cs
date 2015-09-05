@@ -6,9 +6,12 @@ public class enemyMove : MonoBehaviour {
 	Rigidbody2D PlayerR;
 	public GameObject Enemy;
 	Rigidbody2D EnemyR;
+	public static int numPoints=2;
+	public int lives=3;
+	public int speed=5;
+	int next=0;
 
-	public GameObject w1;
-	public GameObject w2;
+	public GameObject[] w= new GameObject[numPoints];
 
 	bool switch1 = false;
 	bool follow = false;
@@ -20,24 +23,24 @@ public class enemyMove : MonoBehaviour {
 
 		
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		
+		if (other.name == "Bullet(Clone)") {
+			lives--;
+			if(lives==0){
+				Destroy( this.gameObject);
+			}
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (PlayerR.velocity.y<10 && PlayerR.velocity.y>-10) {
-		PlayerR.AddForce(new Vector2(0,Input.GetAxis ("Vertical")*10));
-
-		}
-		if (PlayerR.velocity.x<10 && PlayerR.velocity.x>-10) {
-			PlayerR.AddForce(new Vector2(Input.GetAxis ("Horizontal")*10,0));
-		}
-
-
 		// Move Enemy towards Pkayer
 
 
 		float step = 3.0f * Time.deltaTime;
-		if ((Vector2.Distance (GameObject.Find ("Player").transform.position, GameObject.Find ("Enemy").transform.position)) < 5) {
+		if ((Vector2.Distance (Player.transform.position, Enemy.transform.position)) < 5) {
 
 			follow = true;
 
@@ -45,28 +48,22 @@ public class enemyMove : MonoBehaviour {
 		} 
 
 		if (follow == true) {
-			transform.position = Vector3.MoveTowards (transform.position, PlayerR.transform.position, step);
-		}
-		else {
-			if (!switch1) {
-				//else move in between patrol points, w1 and w2
+			Vector3 destination;
+			destination=Player.transform.position-Enemy.transform.position;
+			destination.Normalize();
+			EnemyR.AddForce(destination*speed);
+		} else {
+			//else move in between patrol points, w1 and w2
+			transform.position = Vector3.MoveTowards (transform.position, w[next].transform.position, step);
+			//Debug.Log (transform.position + " " + w1.transform.position);
 
-				transform.position = Vector3.MoveTowards (transform.position, GameObject.Find ("w1").transform.position, step);
-				Debug.Log (transform.position + " " + w1.transform.position);
-
-				if (transform.position.ToString ().Equals (w1.transform.position.ToString ())) {
-					switch1 = true;
-					Debug.Log ("works");
+			if (transform.position.ToString ().Equals (w [next].transform.position.ToString ())) {
+				switch1 = true;
+				next++;
+				if(next>=numPoints){
+					next=0;
 				}
-
-			} else { //switch1 is true
-
-				transform.position = Vector3.MoveTowards (transform.position, GameObject.Find ("w2").transform.position, step);
-			
-				if (transform.position.ToString ().Equals (w2.transform.position.ToString ())) {
-					switch1 = false;
-				}
-
+				Debug.Log ("works");
 			}
 		}
 	}

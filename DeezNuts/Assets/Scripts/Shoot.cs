@@ -12,6 +12,10 @@ public class Shoot : MonoBehaviour {
 		Main.shooting = true;
 		Debug.Log("shooting");
 	}
+	void OnMouseUp(){
+		Main.shooting = false;
+		Debug.Log("stop");
+	}
 	
 	// Update is called once per frame
 	void Update () {
