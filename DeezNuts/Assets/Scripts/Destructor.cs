@@ -9,7 +9,9 @@ public class Destructor : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other) {
 		Debug.Log ("destroyed "+other.name +" "+this.name);
-		Destroy (other.gameObject);
+		if (other.name == "Bullet(Clone)") {
+			Destroy (other.gameObject);
+		}
 	}
 	
 	// Update is called once per frame
