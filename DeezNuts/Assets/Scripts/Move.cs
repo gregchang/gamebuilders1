@@ -10,6 +10,13 @@ public class Move : MonoBehaviour {
 		PlayerR=Player.GetComponent<Rigidbody2D> ();
 	
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		
+		if (other.name == "Nut(Clone)") {
+			Main.deez--;
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {

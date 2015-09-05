@@ -5,20 +5,32 @@ public class Main : MonoBehaviour {
 	public GameObject Player;
 	public GameObject Bullet;
 	public GameObject cam;
+	public GameObject Nut;
+	public GameObject[] points=new GameObject[10];
 	public static bool shooting;
 	public int bulletSpeed=10;
+	public static int deez=10;
+	public string Scene;
 	Vector3 mouse= new Vector3();
 	float angle;
 	float tim=0;
 
 	// Use this for initialization
 	void Start () {
+		deez = 10;
+		for (int i=0; i<points.Length; i++) {
+			Instantiate (Nut, points[i].transform.position, new Quaternion());
+		}
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
+		if (deez <= 0) {
+			Application.LoadLevel(Scene);
+		}
+
 		mouse = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
 		Vector3 lookPos = Camera.main.ScreenToWorldPoint(mouse);
 		lookPos = lookPos - Player.transform.position;
