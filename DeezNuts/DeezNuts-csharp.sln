@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
@@ -18,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																			GlobalSection(MonoDevelopProperties) = preSolution
+																					GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of f06c240... Revert "Greg - Door, walls, and a pickup"
@@ -40,29 +39,7 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
-EndGlobal
-=======
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{C8F450D9-0450-1DE7-F966-6035915CE90A}") = "DeezNuts", "Assembly-CSharp-vs.csproj", "{9E128B1C-5A29-D054-164D-A6C97DBF6707}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E128B1C-5A29-D054-164D-A6C97DBF6707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E128B1C-5A29-D054-164D-A6C97DBF6707}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E128B1C-5A29-D054-164D-A6C97DBF6707}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E128B1C-5A29-D054-164D-A6C97DBF6707}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-					GlobalSection(MonoDevelopProperties) = preSolution
+				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -83,4 +60,3 @@ Global
 	EndGlobalSection
 
 EndGlobal
->>>>>>> Stashed changes
