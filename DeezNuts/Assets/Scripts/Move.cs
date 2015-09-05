@@ -13,7 +13,6 @@ public class Move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		if (PlayerR.velocity.y<10 && PlayerR.velocity.y>-10) {
 			PlayerR.AddForce(new Vector2(0,Input.GetAxis ("Vertical")*10));
 		}
@@ -22,4 +21,6 @@ public class Move : MonoBehaviour {
 		}
 	
 	}
+
+
 }
