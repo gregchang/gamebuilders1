@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Destructor.cs" />
      <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
+     <Compile Include="Assets\Scripts\Nuts.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\enemyMove.cs" />
