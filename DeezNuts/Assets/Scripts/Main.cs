@@ -17,7 +17,7 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		deez = 10;
+		deez = points.Length;
 		for (int i=0; i<points.Length; i++) {
 			Instantiate (Nut, points[i].transform.position, new Quaternion());
 		}
