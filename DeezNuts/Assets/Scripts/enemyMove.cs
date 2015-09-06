@@ -37,7 +37,7 @@ public class enemyMove : MonoBehaviour {
 		// Move Enemy towards Pkayer
 
 		float step = 3.0f * Time.deltaTime;
-		if ((Vector2.Distance (Player.transform.position, Enemy.transform.position)) < distance) {
+		if ((Vector2.Distance (Player.transform.position, Enemy.transform.position)) < distance || lives<3) {
 
 			follow = true;
 
