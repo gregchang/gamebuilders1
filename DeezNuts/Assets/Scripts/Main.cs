@@ -11,6 +11,7 @@ public class Main : MonoBehaviour {
 	public int bulletSpeed=10;
 	public static int deez=10;
 	public static float bullet_time = 0.2f;
+	public static bool died=false;
 	public string Scene;
 	Vector3 mouse= new Vector3();
 	float angle;
@@ -47,6 +48,10 @@ public class Main : MonoBehaviour {
 			newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2((direction.x)*bulletSpeed,(direction.y)*bulletSpeed));
 			Debug.Log("shot" + direction);
 			tim=bullet_time;
+		}
+		if (died) {
+			died=false;
+
 		}
 
 	}
