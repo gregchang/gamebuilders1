@@ -11,10 +11,6 @@ public class enemyMove : MonoBehaviour {
 	public int speed=5;
 	public int distance=3;
 	int next=0;
-	//Audio vars
-	public AudioClip enemyDeath;
-	public AudioClip enemyHurt;
-	AudioSource sound;
 
 	public GameObject[] w;
 	
@@ -23,22 +19,14 @@ public class enemyMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		EnemyR=Enemy.GetComponent<Rigidbody2D> ();
-		//Audio
-		sound = GetComponent<AudioSource> ();
 		
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		
 		if (other.name == "Bullet(Clone)") {
-			Debug.Log("Hit!");
 			lives--;
-			if(lives != 0){
-				sound.PlayOneShot(enemyHurt, 0.5f);
-			}
-
 			if(lives==0){
-
 				Destroy( this.gameObject);
 			}
 		}
@@ -46,7 +34,6 @@ public class enemyMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		// Move Enemy towards Pkayer
 
 		float step = 3.0f * Time.deltaTime;

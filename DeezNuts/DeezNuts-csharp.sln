@@ -17,21 +17,10 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																											GlobalSection(MonoDevelopProperties) = preSolution
-=======
-																																						GlobalSection(MonoDevelopProperties) = preSolution
-=======
-																																							GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> parent of c4fec15... Revert "Level2"
-=======
-																																							GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> Stashed changes
-=======
+<<<<<<< Updated upstream
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
-																							GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> origin/master
+																										GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																											GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> origin/master
@@ -39,25 +28,52 @@ Global
 <<<<<<< HEAD
 																																			GlobalSection(MonoDevelopProperties) = preSolution
 =======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-																						GlobalSection(MonoDevelopProperties) = preSolution
-=======
-																											GlobalSection(MonoDevelopProperties) = preSolution
-=======
-=======
->>>>>>> origin/master
-																						GlobalSection(MonoDevelopProperties) = preSolution
-=======
-																											GlobalSection(MonoDevelopProperties) = preSolution
-<<<<<<< HEAD
->>>>>>> origin/master
->>>>>>> origin/master
-=======
->>>>>>> origin/master
->>>>>>> origin/master
+																																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+																							GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																											GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> origin/master
+<<<<<<< Updated upstream
+=======
+																																							GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																								GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> parent of c4fec15... Revert "Level2"
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+																							GlobalSection(MonoDevelopProperties) = preSolution
+=======
+=======
+<<<<<<< HEAD
+																																			GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
+																						GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> Stashed changes
+=======
+																											GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> origin/master
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+																																			GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
 >>>>>>> origin/master
 																						GlobalSection(MonoDevelopProperties) = preSolution
 =======
@@ -67,7 +83,6 @@ Global
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
-<<<<<<< Updated upstream
 >>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> origin/master
