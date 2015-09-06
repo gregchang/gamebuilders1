@@ -17,10 +17,10 @@ public class PickUp : MonoBehaviour {
 		//Debug.Log ("test");
 		switch (other.name) {
 		case "Nut(Clone)":
-			sound.PlayOneShot (chomp, 0.3F);
+			sound.PlayOneShot (chomp, 1F);
 			break;
 		case "deeze_diamonds":
-			sound.PlayOneShot (cashier, 0.5F);
+			sound.PlayOneShot (cashier, 0.1F);
 			break;
 		}
 		Debug.Log("deez");

@@ -15,20 +15,29 @@ public class enemyMove : MonoBehaviour {
 	public GameObject[] w;
 	
 	bool follow = false;
+
+	//Audio
+	public AudioClip enemyHurt;
+	AudioSource sound;
 	
 	// Use this for initialization
 	void Start () {
 		EnemyR=Enemy.GetComponent<Rigidbody2D> ();
-		
+		sound = GetComponent<AudioSource> ();
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		
 		if (other.name == "Bullet(Clone)") {
 			lives--;
+			if(lives!=0){
+				sound.PlayOneShot(enemyHurt, 0.3F);
+			}
 			if(lives==0){
-				Destroy( this.gameObject);
 				Main.died=true;
+				Destroy( this.gameObject);
+
 			}
 		}
 	}

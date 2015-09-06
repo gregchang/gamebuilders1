@@ -17,12 +17,18 @@ public class Main : MonoBehaviour {
 	float angle;
 	float tim=0;
 
+	//Audio
+	public AudioClip enemyDeath;
+	AudioSource sound;
+
 	// Use this for initialization
 	void Start () {
 		deez = points.Length;
 		for (int i=0; i<points.Length; i++) {
 			Instantiate (Nut, points[i].transform.position, new Quaternion());
 		}
+		sound = GetComponent<AudioSource> ();
+
 	
 	}
 
@@ -50,7 +56,8 @@ public class Main : MonoBehaviour {
 			tim=bullet_time;
 		}
 		if (died) {
-			died=false;
+			sound.PlayOneShot(enemyDeath, 0.3F);
+
 
 		}
 
