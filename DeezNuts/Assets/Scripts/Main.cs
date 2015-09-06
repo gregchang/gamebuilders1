@@ -10,6 +10,7 @@ public class Main : MonoBehaviour {
 	public static bool shooting;
 	public int bulletSpeed=10;
 	public static int deez=10;
+	public static float bullet_time = 0.2f;
 	public string Scene;
 	Vector3 mouse= new Vector3();
 	float angle;
@@ -17,7 +18,7 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		deez = 10;
+		deez = points.Length;
 		for (int i=0; i<points.Length; i++) {
 			Instantiate (Nut, points[i].transform.position, new Quaternion());
 		}
@@ -49,7 +50,7 @@ public class Main : MonoBehaviour {
 			direction.Normalize();
 			newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector2((direction.x)*bulletSpeed,(direction.y)*bulletSpeed));
 			Debug.Log("shot" + direction);
-			tim=0.2f;
+			tim=bullet_time;
 		}
 
 	}

@@ -5,18 +5,23 @@ using System.Collections;
 public class PickUp : MonoBehaviour {
 
 	public AudioClip cashier;
-	AudioSource audio;
+	public AudioClip chomp;
+	AudioSource sound;
 
 	void Start() {
-		audio = GetComponent<AudioSource> ();
+		sound = GetComponent<AudioSource> ();
 	}
 
 	void OnTriggerEnter2D(Collider2D other){	//called when player gameobject touches trigger collider, arg is touched obj
 		//note we aren't using OnCollisionEnter, changing collider to trigger volumes
-		Debug.Log ("test");
+		//Debug.Log ("test");
 		if (other.gameObject.tag == "PickUp") {
 			other.gameObject.SetActive(false);
-			audio.PlayOneShot(cashier, 0.5F);
+			sound.PlayOneShot(cashier, 0.3F);
+		}
+
+		if (other.gameObject.tag == "Nuts") {
+			sound.PlayOneShot(chomp, 0.5F);
 		}
 	}
 }

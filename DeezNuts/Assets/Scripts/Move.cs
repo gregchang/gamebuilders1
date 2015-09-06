@@ -10,11 +10,18 @@ public class Move : MonoBehaviour {
 		PlayerR=Player.GetComponent<Rigidbody2D> ();
 	
 	}
-
 	void OnTriggerEnter2D(Collider2D other) {
-		
+		Debug.Log ("Inside Move Trigger");
 		if (other.name == "Nut(Clone)") {
 			Main.deez--;
+		}
+		if (other.gameObject.tag == "PickUp") {
+			if(Main.bullet_time >= 0.12f){
+				Debug.Log("Faster shooting!");
+				Main.bullet_time -= 0.02f;
+			}
+			else
+				Debug.Log ("Already at 0.10f delay.");
 		}
 	}
 	
