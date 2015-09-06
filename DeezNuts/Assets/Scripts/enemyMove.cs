@@ -28,6 +28,7 @@ public class enemyMove : MonoBehaviour {
 			lives--;
 			if(lives==0){
 				Destroy( this.gameObject);
+				Main.died=true;
 			}
 		}
 	}
@@ -54,6 +55,10 @@ public class enemyMove : MonoBehaviour {
 			if (w.Length > 1) {
 				//else move in between patrol points, w1 and w2
 				transform.position = Vector3.MoveTowards (transform.position, w [next].transform.position, step);
+				Vector3 destination;
+				destination = Enemy.transform.position - w[next].transform.position;
+				float angle =  Mathf.Atan2(destination.y, destination.x) * Mathf.Rad2Deg;
+				Enemy.transform.rotation = Quaternion.AngleAxis(angle+90, Vector3.forward);
 				//Debug.Log (transform.position + " " + w1.transform.position);
 
 				if (transform.position.ToString ().Equals (w [next].transform.position.ToString ())) {
