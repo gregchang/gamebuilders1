@@ -22,18 +22,19 @@ public class Move : MonoBehaviour {
 		if (other.name == "Nut(Clone)") {
 			Main.deez--;
 		}
-<<<<<<< HEAD
+
 		if (other.gameObject.tag == "PickUp") {
 			if(Main.bullet_time >= 0.12f){
 				Debug.Log("Faster shooting!");
 				Main.bullet_time -= 0.02f;
 			}
-			else
+			else {
 				Debug.Log ("Already at 0.10f delay.");
-=======
+			}
+		}
 		if (other.name == "Damage") {
 			lives--;
->>>>>>> origin/master
+
 		}
 	}
 	
