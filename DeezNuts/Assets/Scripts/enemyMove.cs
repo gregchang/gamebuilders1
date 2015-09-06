@@ -46,21 +46,25 @@ public class enemyMove : MonoBehaviour {
 
 		if (follow == true) {
 			Vector3 destination;
-			destination=Player.transform.position-Enemy.transform.position;
-			destination.Normalize();
-			EnemyR.AddForce(destination*speed);
+			destination = Player.transform.position - Enemy.transform.position;
+			destination.Normalize ();
+			EnemyR.AddForce (destination * speed);
 		} else {
-			//else move in between patrol points, w1 and w2
-			transform.position = Vector3.MoveTowards (transform.position, w[next].transform.position, step);
-			//Debug.Log (transform.position + " " + w1.transform.position);
 
-			if (transform.position.ToString ().Equals (w [next].transform.position.ToString ())) {
-				next++;
-				if(next>=w.Length){
-					next=0;
+			if (w.Length > 1) {
+				//else move in between patrol points, w1 and w2
+				transform.position = Vector3.MoveTowards (transform.position, w [next].transform.position, step);
+				//Debug.Log (transform.position + " " + w1.transform.position);
+
+				if (transform.position.ToString ().Equals (w [next].transform.position.ToString ())) {
+					next++;
+					if (next >= w.Length) {
+						next = 0;
+					}
+					//Debug.Log ("works");
 				}
-				//Debug.Log ("works");
 			}
 		}
 	}
 }
+

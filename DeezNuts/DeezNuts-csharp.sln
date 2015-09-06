@@ -17,6 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 																										GlobalSection(MonoDevelopProperties) = preSolution
@@ -27,11 +28,17 @@ Global
 <<<<<<< HEAD
 																																			GlobalSection(MonoDevelopProperties) = preSolution
 =======
+																																								GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> Stashed changes
+=======
 <<<<<<< HEAD
-																						GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+																							GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																											GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> origin/master
+<<<<<<< Updated upstream
 =======
 																																							GlobalSection(MonoDevelopProperties) = preSolution
 =======
@@ -43,8 +50,25 @@ Global
 <<<<<<< HEAD
 																							GlobalSection(MonoDevelopProperties) = preSolution
 =======
-																											GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+																																			GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
 >>>>>>> origin/master
+																						GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> Stashed changes
+=======
+																											GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> origin/master
+<<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 																																			GlobalSection(MonoDevelopProperties) = preSolution
@@ -63,6 +87,8 @@ Global
 >>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> origin/master
+=======
+>>>>>>> Stashed changes
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of f06c240... Revert "Greg - Door, walls, and a pickup"

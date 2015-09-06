@@ -17,6 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 																									GlobalSection(MonoDevelopProperties) = preSolution
@@ -25,6 +26,9 @@ Global
 =======
 																																							GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of c4fec15... Revert "Level2"
+=======
+																																							GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> Stashed changes
 =======
 <<<<<<< HEAD
 =======
@@ -39,11 +43,13 @@ Global
 																																			GlobalSection(MonoDevelopProperties) = preSolution
 =======
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 																						GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																											GlobalSection(MonoDevelopProperties) = preSolution
 =======
+=======
 >>>>>>> origin/master
 																						GlobalSection(MonoDevelopProperties) = preSolution
 =======
@@ -54,9 +60,23 @@ Global
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
+																						GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																											GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+<<<<<<< Updated upstream
 >>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> origin/master
+>>>>>>> origin/master
+=======
+>>>>>>> Stashed changes
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of f06c240... Revert "Greg - Door, walls, and a pickup"
