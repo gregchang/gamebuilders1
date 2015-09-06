@@ -1,17 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PickUp.cs">
-    <Files>
-      <File FileName="Assets\Scripts\PickUp.cs" Line="29" Column="1" />
-      <File FileName="Assets\Scripts\Move.cs" Line="26" Column="27" />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\enemyMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Main.cs">
     <Files>
-      <File FileName="Assets\Scripts\PickUp.cs" Line="23" Column="35" />
-      <File FileName="Assets\Scripts\enemyMove.cs" Line="20" Column="22" />
->>>>>>> origin/master
+      <File FileName="Assets\Scripts\Destructor.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Main.cs" Line="60" Column="15" />
+      <File FileName="Assets\Scripts\Move.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

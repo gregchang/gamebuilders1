@@ -57,8 +57,7 @@ public class Main : MonoBehaviour {
 		}
 		if (died) {
 			sound.PlayOneShot(enemyDeath, 0.3F);
-
-
+			died=false;
 		}
 
 	}
