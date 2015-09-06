@@ -27,6 +27,7 @@ public class Move : MonoBehaviour {
 			if(Main.bullet_time >= 0.12f){
 				Debug.Log("Faster shooting!");
 				Main.bullet_time -= 0.02f;
+				Destroy(other.gameObject);
 			}
 			else {
 				Debug.Log ("Already at 0.10f delay.");
