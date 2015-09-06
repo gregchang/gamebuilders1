@@ -17,11 +17,11 @@ public class PickUp : MonoBehaviour {
 		//Debug.Log ("test");
 		if (other.gameObject.tag == "PickUp") {
 			other.gameObject.SetActive(false);
-			sound.PlayOneShot(cashier, 0.3F);
+			sound.PlayOneShot(cashier, 0.2F);
 		}
 
 		if (other.gameObject.tag == "Nuts") {
-			sound.PlayOneShot(chomp, 0.5F);
+			sound.PlayOneShot(chomp, 0.6F);
 		}
 	}
 }
