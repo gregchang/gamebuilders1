@@ -8,7 +8,7 @@ public class Move : MonoBehaviour {
 	public string thisS;
 	public string nextS;
 	string endS;
-	bool show=false;
+	//bool show=false;
 	Rigidbody2D PlayerR;
 	public int lives = 1;
 
