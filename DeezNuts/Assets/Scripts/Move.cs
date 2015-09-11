@@ -31,6 +31,7 @@ public class Move : MonoBehaviour {
 			}
 			else {
 				Debug.Log ("Already at 0.10f delay.");
+				Destroy(other.gameObject);
 			}
 		}
 		if (other.name == "Damage") {
