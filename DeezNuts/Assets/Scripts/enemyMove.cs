@@ -32,7 +32,7 @@ public class enemyMove : MonoBehaviour {
 		if (other.name == "Bullet(Clone)") {
 			lives--;
 			if(lives!=0){
-				sound.PlayOneShot(enemyHurt, 0.3F);
+				sound.PlayOneShot(enemyHurt, 0.2F);
 			}
 			if(lives==0){
 				Main.died=true;

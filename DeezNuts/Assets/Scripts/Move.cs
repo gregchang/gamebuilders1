@@ -8,7 +8,7 @@ public class Move : MonoBehaviour {
 	public string thisS;
 	public string nextS;
 	string endS;
-	bool show=false;
+	//bool show=false;
 	Rigidbody2D PlayerR;
 	public int lives = 1;
 
@@ -31,6 +31,7 @@ public class Move : MonoBehaviour {
 			}
 			else {
 				Debug.Log ("Already at 0.10f delay.");
+				Destroy(other.gameObject);
 			}
 		}
 		if (other.name == "Damage") {
