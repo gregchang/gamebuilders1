@@ -46,7 +46,7 @@ public class Main : MonoBehaviour {
 		
 		tim -= Time.deltaTime;
 		if (shooting && tim<0) {
-			Vector3 direction=Player.transform.position+Player.transform.up;
+			Vector3 direction=Player.transform.position;
 			GameObject newBullet=(GameObject) Instantiate(Bullet,direction,new Quaternion());
 			direction.x=lookPos.x+cam.transform.position.x-direction.x;
 			direction.y=lookPos.y+cam.transform.position.y-direction.y;
